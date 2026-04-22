@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React + .NET Weather</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 900px;
+      margin: 48px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+      padding: 24px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+    }
+    th, td {
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+      padding: 10px;
+    }
+    .error {
+      color: #b91c1c;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>React + .NET Weather Forecast</h1>
+    <p>This React UI is served as static files by ASP.NET Core and reads data from <code>/weatherforecast</code>.</p>
+    <div id="root"></div>
+  </main>
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="/app.js"></script>
+</body>
+</html>
